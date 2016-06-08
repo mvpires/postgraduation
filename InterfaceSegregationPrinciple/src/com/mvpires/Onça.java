@@ -7,6 +7,6 @@ public class Onça implements AnimalTerrestre {
 
     @Override
     public void correr() {
-        System.out.println("Onça correndo");
+        System.out.println("Onça correndo no chão");
     }
 }
