@@ -1,0 +1,9 @@
+<Alloy>
+	<Tab id="favoritesTab">
+		<Window>
+			<TableView onClick="showDetails" dataCollection="favorites" dataFilter="favoritesFilter">
+				<TableViewRow title="{name}" characterId="{alloy_id}"></TableViewRow>
+			</TableView>
+		</Window>
+	</Tab>
+</Alloy>

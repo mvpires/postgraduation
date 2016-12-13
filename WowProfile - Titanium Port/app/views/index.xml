@@ -1,0 +1,6 @@
+<Alloy>
+	<TabGroup>
+		<Require src="favorites"></Require>
+		<Require src="searchCharacter"></Require>
+	</TabGroup>
+</Alloy>

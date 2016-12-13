@@ -1,0 +1,11 @@
+<Alloy>
+	<Window>
+		<Label id="characterDetailName"></Label>
+		<Label id="characterDetailRace"></Label>
+		<Label id="characterDetailFaction"></Label>
+		<Label id="characterDetailLevel"></Label>
+		<Label id="characterDetailGuild"></Label>
+		<ImageView id="characterDetailAvatar"></ImageView>
+		
+	</Window>
+</Alloy>

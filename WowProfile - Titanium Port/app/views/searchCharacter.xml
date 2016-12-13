@@ -1,0 +1,8 @@
+<Alloy>
+	<Tab id="characterSearchTab">
+		<Window id="searchCharacterWindow">
+			<TextField id="CharacterSearchTextField"></TextField>
+			<Button id="CharacterSearchButton" onClick="searchCharacter"></Button>
+		</Window>
+	</Tab>
+</Alloy>

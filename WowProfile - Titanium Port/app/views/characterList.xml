@@ -1,0 +1,9 @@
+<Alloy>
+	<Tab id="characterListTab">
+		<Window>
+			<TableView onClick="showCharacterDetails">
+				<TableViewRow id="tableRowCharList"></TableViewRow>
+			</TableView>
+		</Window>
+	</Tab>
+</Alloy>
