@@ -26,7 +26,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Verde"/>
                                 <connections>
-                                    <segue destination="Ya0-ir-1wc" kind="show" id="Aou-Cd-Xwj"/>
+                                    <segue destination="Ya0-ir-1wc" kind="show" identifier="segueVerde" id="Aou-Cd-Xwj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mk-AX-Yep">
@@ -34,7 +34,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Amarelo"/>
                                 <connections>
-                                    <segue destination="BDi-cM-kts" kind="show" id="soV-no-PMb"/>
+                                    <segue destination="BDi-cM-kts" kind="show" identifier="segueAmarelo" id="soV-no-PMb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jqk-am-fE9">
@@ -42,7 +42,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Vermelho"/>
                                 <connections>
-                                    <segue destination="0rn-XE-V3k" kind="show" id="f9u-39-PGU"/>
+                                    <segue destination="0rn-XE-V3k" kind="show" identifier="segVermelho" id="f9u-39-PGU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -57,7 +57,7 @@
         <!--Title-->
         <scene sceneID="dYE-fH-6Xo">
             <objects>
-                <viewController id="Ya0-ir-1wc" sceneMemberID="viewController">
+                <viewController id="Ya0-ir-1wc" customClass="VerdeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zRL-bX-r73"/>
                         <viewControllerLayoutGuide type="bottom" id="nE7-BR-6Sx"/>
@@ -74,14 +74,24 @@
                                     <segue destination="ArJ-c9-jQQ" kind="show" id="Zu7-gj-MBf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQl-0I-9lf">
+                                <rect key="frame" x="25" y="206" width="311" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.026313179589999999" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="M3D-qI-xHG"/>
+                    <connections>
+                        <outlet property="VerdeLabel" destination="CQl-0I-9lf" id="8hT-to-Mdr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BIO-JY-60I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1956" y="-1136"/>
+            <point key="canvasLocation" x="1956" y="-1136.5817091454273"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2RI-t3-lsd">
@@ -274,10 +284,10 @@
             </objects>
             <point key="canvasLocation" x="4510" y="-699"/>
         </scene>
-        <!--View Controller-->
+        <!--Amarelo View Controller-->
         <scene sceneID="MDM-EM-BbA">
             <objects>
-                <viewController id="BDi-cM-kts" sceneMemberID="viewController">
+                <viewController id="BDi-cM-kts" customClass="AmareloViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5ni-xL-7AC"/>
                         <viewControllerLayoutGuide type="bottom" id="8zi-AD-u6N"/>
@@ -294,18 +304,28 @@
                                     <segue destination="juB-aj-Nkw" kind="show" id="EEK-Rn-AvR"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5V-Nk-Xhw">
+                                <rect key="frame" x="60" y="217" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.96522242538613023" blue="0.2365035973851326" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="AmareloLabel" destination="R5V-Nk-Xhw" id="dCN-6D-31c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XAt-Yu-0tM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1921" y="-63"/>
+            <point key="canvasLocation" x="1920.8" y="-63.418290854572717"/>
         </scene>
-        <!--View Controller-->
+        <!--Vermelho View Controller-->
         <scene sceneID="bQg-Xs-MhW">
             <objects>
-                <viewController id="0rn-XE-V3k" sceneMemberID="viewController">
+                <viewController id="0rn-XE-V3k" customClass="VermelhoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rbn-Rl-DTr"/>
                         <viewControllerLayoutGuide type="bottom" id="nbb-cb-47k"/>
@@ -322,13 +342,23 @@
                                     <segue destination="5Ml-N3-23E" kind="show" id="GM2-TU-osI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgV-ZE-Bwa">
+                                <rect key="frame" x="16" y="208" width="324" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.029058596230040146" blue="0.012543872373962039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="VermelhoLabel" destination="KgV-ZE-Bwa" id="X8l-eO-xfL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hw2-9r-Svl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1921" y="1158"/>
+            <point key="canvasLocation" x="1920.8" y="1156.3718140929536"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QIW-cu-3Cr">
