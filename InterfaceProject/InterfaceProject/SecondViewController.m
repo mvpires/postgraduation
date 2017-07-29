@@ -7,6 +7,7 @@
 //
 
 #import "SecondViewController.h"
+#import "CustomTableViewCell.h"
 
 @interface SecondViewController ()
 
@@ -19,6 +20,18 @@
     // Do any additional setup after loading the view.
     
     self.array = @[@"Segunda", @"Terça", @"Quarta", @"Quinta", @"Sexta"];
+    
+    NSDictionary *dictionary = @{@"nome":@"nomeTeste",
+                                 @"email":@"emailTeste",
+                                 @"rua":@"ruaTeste",
+                                 @"pais":@"paísTeste"};
+    
+    NSDictionary *dictionary2 = @{@"nome":@"nomeTeste2",
+                                 @"email":@"emailTeste2",
+                                 @"rua":@"ruaTeste2",
+                                 @"pais":@"paísTeste2"};
+    
+    self.array = @[dictionary, dictionary2];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,12 +48,26 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"orangeCell" forIndexPath:indexPath];
+
+    CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"customCell" forIndexPath:indexPath];
     
-    cell.textLabel.text = self.array[indexPath.row];
+    NSDictionary *dic = self.array[indexPath.row];
+    
+    cell.nomeLabel.text = dic[@"nome"];
+    cell.emailLabel.text = dic[@"email"];
+    cell.ruaLabel.text = dic[@"rua"];
+    cell.countryLabel.text = dic[@"país"];
+    
+//    cell.textLabel.text = self.array[indexPath.row];
+    
     return cell;
+    
 }
 
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 
 
 /*

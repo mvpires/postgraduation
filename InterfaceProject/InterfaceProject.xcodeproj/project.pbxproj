@@ -14,6 +14,7 @@
 		81428AC11F2CFB4200C94B89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81428AC01F2CFB4200C94B89 /* Assets.xcassets */; };
 		81428AC41F2CFB4200C94B89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81428AC21F2CFB4200C94B89 /* LaunchScreen.storyboard */; };
 		81428ACF1F2D0C3F00C94B89 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81428ACE1F2D0C3F00C94B89 /* SecondViewController.m */; };
+		81428AD21F2D19A000C94B89 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81428AD11F2D19A000C94B89 /* CustomTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		81428AC51F2CFB4200C94B89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81428ACD1F2D0C3F00C94B89 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		81428ACE1F2D0C3F00C94B89 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		81428AD01F2D19A000C94B89 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomTableViewCell.h; path = ../CustomTableViewCell.h; sourceTree = "<group>"; };
+		81428AD11F2D19A000C94B89 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomTableViewCell.m; path = ../CustomTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 		81428AB31F2CFB4200C94B89 /* InterfaceProject */ = {
 			isa = PBXGroup;
 			children = (
+				81428AD01F2D19A000C94B89 /* CustomTableViewCell.h */,
+				81428AD11F2D19A000C94B89 /* CustomTableViewCell.m */,
 				81428AB71F2CFB4200C94B89 /* AppDelegate.h */,
 				81428AB81F2CFB4200C94B89 /* AppDelegate.m */,
 				81428ABA1F2CFB4200C94B89 /* ViewController.h */,
@@ -158,6 +163,7 @@
 				81428ACF1F2D0C3F00C94B89 /* SecondViewController.m in Sources */,
 				81428ABC1F2CFB4200C94B89 /* ViewController.m in Sources */,
 				81428AB91F2CFB4200C94B89 /* AppDelegate.m in Sources */,
+				81428AD21F2D19A000C94B89 /* CustomTableViewCell.m in Sources */,
 				81428AB61F2CFB4200C94B89 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
