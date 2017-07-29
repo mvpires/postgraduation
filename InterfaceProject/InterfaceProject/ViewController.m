@@ -36,11 +36,13 @@
         self.button.hidden = YES;
     }
 }
-- (IBAction)sliderAction:(id)sender {
+- (IBAction)changeSliderValue:(UISlider *)sender {
     
     self.value++;
     
-    [self.sliderValue setText:[NSString stringWithFormat:@"%d", self.value]];
+    self.sliderValue.text = [NSString stringWithFormat:@"%f", sender.value];
+
 }
+
 
 @end

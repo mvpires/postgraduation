@@ -13,6 +13,7 @@
 		81428ABF1F2CFB4200C94B89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81428ABD1F2CFB4200C94B89 /* Main.storyboard */; };
 		81428AC11F2CFB4200C94B89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81428AC01F2CFB4200C94B89 /* Assets.xcassets */; };
 		81428AC41F2CFB4200C94B89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81428AC21F2CFB4200C94B89 /* LaunchScreen.storyboard */; };
+		81428ACF1F2D0C3F00C94B89 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81428ACE1F2D0C3F00C94B89 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		81428AC01F2CFB4200C94B89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81428AC31F2CFB4200C94B89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81428AC51F2CFB4200C94B89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81428ACD1F2D0C3F00C94B89 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		81428ACE1F2D0C3F00C94B89 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				81428AC21F2CFB4200C94B89 /* LaunchScreen.storyboard */,
 				81428AC51F2CFB4200C94B89 /* Info.plist */,
 				81428AB41F2CFB4200C94B89 /* Supporting Files */,
+				81428ACD1F2D0C3F00C94B89 /* SecondViewController.h */,
+				81428ACE1F2D0C3F00C94B89 /* SecondViewController.m */,
 			);
 			path = InterfaceProject;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81428ACF1F2D0C3F00C94B89 /* SecondViewController.m in Sources */,
 				81428ABC1F2CFB4200C94B89 /* ViewController.m in Sources */,
 				81428AB91F2CFB4200C94B89 /* AppDelegate.m in Sources */,
 				81428AB61F2CFB4200C94B89 /* main.m in Sources */,
